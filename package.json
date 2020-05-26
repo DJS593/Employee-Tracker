@@ -1,0 +1,23 @@
+{
+  "name": "module12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "sqlite3 db/employee.db < db/schema.sql",
+    "seed": "sqlite3 db/employee.db < db/seeds.sql",
+    "db": "sqlite3 db/employee.db",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite3": "^4.2.0"
+  }
+}
