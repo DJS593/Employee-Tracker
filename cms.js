@@ -2,7 +2,6 @@
 var inquirer = require('inquirer');
 cTable = require('console.table');
 var mysql = require('mysql2');
-/* const sequelize = require("./config/connection"); Research this one!!! is this the best way to create asynchronous functions */
 require('dotenv').config()
  
 
@@ -18,27 +17,6 @@ const connection = mysql.createConnection({
 });
 
 
-
-//query ORM dependencies
-//const query = require("./mysql_queries/queries")
-
-//seed dependencies
-//const seeds = require("./seeds")
-
-
-// model dependencies
-const db = {};
-
-//syncing with database
-// db.sequelize.sync({ force: false }).then(function () {
-//     // db.departments.create({name: "development"}).then(function(){
-//     //     db.departments.findAll({}).then(function(res){
-//     //         console.log(res)
-//     //     })
-//     // })
-//     // seeds.employeeSeed()
-//     promptUser();
-// })
 
 
 const promptUser = () => { 
@@ -76,14 +54,6 @@ const promptUser = () => {
         
         break;    
         
-  // example of asynchronous promise
-        // con.promise().query("SELECT 1")
-  // .then( ([rows,fields]) => {
-  //   console.log(rows);
-  // })
-  // .catch(console.log)
-  // .then( () => con.end());
-      
         case 'view all roles':
           connection.query(
             'SELECT * FROM role',
