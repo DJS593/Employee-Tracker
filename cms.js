@@ -154,30 +154,41 @@ addRole = () => {
   ])
       
       .then(answer => {
-        var sql = "INSERT INTO role (title, salary, department_id) VALUES (?, ?, ?)";
         let dept = answer.chooseDepartment;
-        console.log('1');
+        let salary = answer.addSalary;
+        let title = answer.addTitle;
         let deptId = '';
-        console.log("2");
+        console.log(dept);
+        console.log(answer.chooseDepartment);
+        console.log(answer);
         if (dept === 'Sales') {
-          let deptId = 1;
+          deptId = '1';
         } else if (dept === 'Finance') {
-          let deptId = 2;
+            deptId = '2';
         } else if (dept === 'Marketing') {
-          let deptId = 3;
+            deptId = '3';
         } else if (dept === 'Technology') {
-          let deptId = 4;
+            deptId = '4';
         } else if (dept === 'Operations') {
-          let deptId = 5;
+            deptId = '5';
         } else if (dept === 'Risk') {
-          let deptId = 6;
+            deptId = '6';
         } else {
           console.log('no ID matches');
         }
-          console.log(deptId);
-        connection.query(sql, answer.addTitle, answer.addSalary, deptId, (err, result) => {
-          if (err) throw err;
-          console.log('added '+ answer.addRole);
+          
+        var sql = "INSERT INTO role SET ?";
+        connection.query(sql, 
+          {
+            title: title, 
+            salary: salary, 
+            department_id: deptId}, 
+          
+          (err, result) => {
+          
+            if (err) throw err;
+          console.log('added '+ answer.addTitle);
+          
           promptUser();
         });       
     });         
