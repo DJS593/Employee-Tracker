@@ -1,5 +1,5 @@
 .DS_Store
-holdings.js
+.env
 
 # Logs
 logs

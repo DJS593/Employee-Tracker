@@ -33,23 +33,23 @@ VALUES
   ('Risk Director', 175000, 18, 6);
   
 
-INSERT INTO employee (first_name, last_name, id, role_id, manager_id)
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES  
-  ('Tom', 'Smith', 50, 1, 51),
-  ('Susan', 'Jones', 51, 2, 52),
-  ('Bob', 'Knight', 52, 3, null),
-  ('Terry', 'White', 53, 4, 54),
-  ('Matt', 'Matsui', 54, 5, 55),
-  ('Chris', 'Christo', 55, 6, null),
-  ('Bob', 'Smith', 56, 7, 57),
-  ('Kathy', 'Brown', 57, 8, 58),
-  ('Matt', 'Young', 58, 9, null),
-  ('Walter', 'Sato', 59, 10, 60),
-  ('Willy', 'Wonka', 60, 11, 61),
-  ('Buster', 'Posey', 61, 12, null),
-  ('Madison', 'Bumgarner', 62, 13, 63),
-  ('Chipper', 'Jones', 63, 14, 64),
-  ('Steve', 'Avery', 64, 15, null),
-  ('Hulk', 'Hogan', 65, 16, 66),
-  ('Barry', 'Sanders', 66, 17, 67),
-  ('Jerry', 'Rice', 67, 18, null);
+  ('Tom', 'Smith', 1, 1),
+  ('Susan', 'Jones', 2, 2),
+  ('Bob', 'Knight', 3, 3),
+  ('Terry', 'White', 4, 4),
+  ('Matt', 'Matsui', 5, 5),
+  ('Chris', 'Christo', 6, 6),
+  ('Bob', 'Smith', 7, 7),
+  ('Kathy', 'Brown', 8, 8),
+  ('Matt', 'Young', 9, 9),
+  ('Walter', 'Sato', 10, 10),
+  ('Willy', 'Wonka', 11, 11),
+  ('Buster', 'Posey', 12, 12),
+  ('Madison', 'Bumgarner', 13, 13),
+  ('Chipper', 'Jones', 14, 14),
+  ('Steve', 'Avery', 15, 15),
+  ('Hulk', 'Hogan', 16, 16),
+  ('Barry', 'Sanders', 17, 17),
+  ('Jerry', 'Rice', 18, 18);
