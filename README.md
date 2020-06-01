@@ -35,7 +35,7 @@
   Email stadj099@yahoo.com with any additional questions. 
  
   ## Video Link<a name="video"></a>
-  To be added 
+  https://drive.google.com/file/d/1QVrC82zmBftN9VEzR-XOBRX8V8l6NXds/view
   
   ## Employee Tracker Example<a name="example"></a>
   # Command Line Interface
