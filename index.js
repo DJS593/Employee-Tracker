@@ -6,7 +6,6 @@ const connection = require('./db/connection');
 require('dotenv').config()
  
 
-
 // Prompt the user to choose a specific action from a pre-defined list.  Once the choice is made the code will redirect to the appropriate function to complete the desired task //
 const promptUser = () => { 
     return inquirer.prompt([
